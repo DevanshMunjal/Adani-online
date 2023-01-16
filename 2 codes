@@ -1,0 +1,38 @@
+#WAP to create 2d array
+->
+import random
+def main():
+row = int (input () )
+col = int (input ( ))
+for i in range (row):
+for i in range (col):
+print (random.randint (0, 100), end=" ") print ()
+if
+== " main.
+name
+main()
+
+#WAF sort 2d array
+->
+import random
+def create_2d_list (numberOfRows, numberofColumns) :
+arr = [I° for i in range (numberOfColumns)] for j in range (numberofRows) ] for i in range (number0fRows) :
+for j in range (numberOfColumns) :
+arr[i][j] = random.randint (0, 100)
+return arr
+def sort_2d_list(arr, colIndex):
+for i in range (len (arr)):
+for j in range(len (arr) - 1):
+if arr[j][colIndex] › arr[j + 1] [colIndex]:
+arr[jl, arr[j + 1] = arr[j + 1], arr[j]
+return arr
+def main():
+numberofrows = int (input ("Enter the number of rows:"))
+numberofColumns = int (input ("Enter the number of columns:"))
+arr = create_2d_list (numberOfRows, numberOfColumns)
+print (arr)
+colIndex = int(
+input ("Enter the column to be sorted(0 to "+str (numberofColumns-1)+"):"))
+arr = sort_2d_list(arr, colIndex)
+print(arr)
+if name main ()
